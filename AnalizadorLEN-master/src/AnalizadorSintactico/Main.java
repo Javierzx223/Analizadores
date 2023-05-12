@@ -18,7 +18,7 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ArrayList<String> a = new ArrayList<String>();
         a.add("a");
         a.add("b");
@@ -38,13 +38,13 @@ public class Main {
                 new VENTANA().setVisible(true);
             }
         });
-    }
-    /*public static void main(String args[]) {
+    }*/
+    public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new VENTANA().setVisible(true);
             }
         });
-    }*/
+    }
 
 }

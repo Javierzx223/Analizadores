@@ -18,25 +18,22 @@ public class AnalizadorSintactico {
     String codigo;
     StringTokenizer cadena;
     ArrayList<String> tokens = new ArrayList<String>();
-    ArrayList<Token> alt=new ArrayList<Token>();
-   
+    ArrayList<Token> alt = new ArrayList<Token>();
 
-    public void separar(String txt){
+    public void separar(String txt) {
 
         String palabras = "";
         codigo = txt;
         cadena = new StringTokenizer(codigo);
-        while(cadena.hasMoreTokens()){
+        while (cadena.hasMoreTokens()) {
             tokens.add(cadena.nextToken());
         }
         tokens.add("$");
-       
-        for(int i =0; i<tokens.size();i++){
-            palabras = palabras +(" palabra "+ i +": "+ tokens.get(i)+"\n");
-        }
-    
-    }
 
-    
+        for (int i = 0; i < tokens.size(); i++) {
+            palabras = palabras + (" palabra " + i + ": " + tokens.get(i) + "\n");
+        }
+
+    }
 
 }
